@@ -85,9 +85,9 @@ with open("db_init.sql", "w",  encoding="utf-8") as f:
             date = (file[i][:-1].split(','))
             tag = date[2].replace("'", "‘")
             if i == len(file) - 1:
-                f.write("\n ({0}, {1}, '{2}', {3});\n".format(date[0], date[1], tag, date[3]))
+                f.write("\n ({0}, {1}, {2}, '{3}', {4});\n".format(i+1, date[0], date[1], tag, date[3]))
             else:
-                f.write("\n ({0}, {1}, '{2}', {3}),".format(date[0], date[1], tag, date[3]))
+                f.write("\n ({0}, {1}, {2}, '{3}', {4}),".format(i+1, date[0], date[1], tag, date[3]))
 
     f.write("\nINSERT INTO users (id, name, email, gender, register_date, occupation)\n")
     f.write("VALUES")
@@ -97,6 +97,6 @@ with open("db_init.sql", "w",  encoding="utf-8") as f:
             date = file[i][:-1].replace("'", "‘")
             date = date.split('|')
             if i == len(file) - 1:
-                f.write("\n ({0}, '{1}', '{2}', '{3}', {4}, '{5}'));\n".format(date[0], date[1], date[2], date[3], date[4], date[5]))
+                f.write("\n ({0}, '{1}', '{2}', '{3}', {4}, '{5}');\n".format(date[0], date[1], date[2], date[3], date[4], date[5]))
             else:
                 f.write("\n ({0}, '{1}', '{2}', '{3}', {4}, '{5}'),".format(date[0], date[1], date[2], date[3], date[4], date[5]))
