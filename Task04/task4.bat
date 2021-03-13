@@ -48,4 +48,3 @@ echo "8. Определить самый распространенный жан
 echo "--------------------------------------------------"
 sqlite3 movies_rating.db -box -echo "select genre, max(number_of_movies) from (with divided_genres(genre, combined_genres) as (select null, genres from movies union all select case when instr(combined_genres, '|') = 0 then combined_genres else substr(combined_genres, 1, instr(combined_genres, '|') - 1) end, case when instr(combined_genres, '|') = 0 then null else substr(combined_genres, instr(combined_genres, '|') + 1) end from divided_genres where combined_genres is not null) select genre, count(*) as number_of_movies from divided_genres where genre is not null group by genre);"
 echo " "
-pause
