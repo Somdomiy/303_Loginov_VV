@@ -1,0 +1,75 @@
+.headers{
+    text-align: center;
+}
+
+
+.container{
+    background-color: rgba(108, 68, 116, 0.507);
+    margin-top:  5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+
+.modal-content shadow{
+    background-color: rgba(108, 68, 116, 0.507);
+    margin-top:  5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.modal fade{
+    background-color: rgba(108, 68, 116, 0.507);
+    text-align: center;
+     
+}
+
+.modal-header{
+    background-color: rgba(108, 68, 116, 0.507);
+    text-align: center; 
+       
+}
+
+.modal-body{
+    background-color: rgba(108, 68, 116, 0.507);
+    text-align: center; 
+       
+}
+
+.modal-footer{
+    background-color: rgba(108, 68, 116, 0.507);
+    text-align: center; 
+       
+}
+
+.table-dark{
+    background-color: rgba(108, 68, 116, 0.507);
+    text-align: center;  
+      
+}
+
+
+.col-7{
+ 
+    text-align: center;  
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.col-10{
+ 
+    text-align: center;  
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.col-11{
+ 
+    text-align: center;  
+    margin-left: auto;
+    margin-right: auto;   
+}
